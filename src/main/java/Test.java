@@ -1,42 +1,16 @@
 public class Test {
     public static void main(String[] args) {
+        Season season = Season.SPRING;
 
-//        Animal animal2 = Animal.PIG;
-//        System.out.println(animal2);
+        System.out.println(season.name());
 
-//        Animal animal1 = Animal.CAT;
-//
-//        switch (animal1) {
-//            case CAT:
-//                System.out.println("it is a cat");
-//                break;
-//            case DOG:
-//                System.out.println("it is a dog");
-//                break;
-//            default:
-//                System.out.println("it is not an animal");
-//        }
+        Animal animal = Animal.TIGER;
 
-        Season season1 = Season.AUTUMN;
+        System.out.println(animal.name());
 
-        System.out.println(season1.getTemperature());
+        Animal cat = Animal.valueOf("CAT");
+        System.out.println(cat.getTranslation());
 
-//        System.out.println(season1.getClass());
-
-//        switch (season1) {
-//            case SUMMER:
-//                System.out.println("it is summer");
-//                break;
-//            case WINTER:
-//                System.out.println("it is winter");
-//                break;
-//            case AUTUMN:
-//                System.out.println("it is autumn");
-//                break;
-//            case SPRING:
-//                System.out.println("it is spring");
-//            default:
-//                System.out.println("it is not a time of the season");
-//        }
+        System.out.println(cat.ordinal());
     }
 }
